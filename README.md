@@ -52,8 +52,13 @@ The extension creates a **no-repo** cloud agent (`POST https://api.cursor.com/v1
 
 ## Scripts
 
-| Command        | Description                |
-| -------------- | -------------------------- |
-| `npm run dev`  | Dev build + reload on :3847 |
-| `npm run build`| Production Chrome/Edge MV3 |
-| `npm run compile` | Typecheck only          |
+| Command           | Description                                  |
+| ----------------- | -------------------------------------------- |
+| `npm run dev`     | Extension dev build + reload on port **3847** |
+| `npm run build`   | Production Chrome/Edge MV3                   |
+| `npm run compile` | Typecheck only                               |
+| `npm run demo`    | Optional UI preview (sample data) on **3848** |
+
+## Note on pull requests
+
+This greenfield session may start as a temporary agent repo. If opening a PR fails with `repoKind="agent_temp"`, create a real repository from the agent UI first, then open the PR from branch `cursor/daily-learner-extension-fd8a` into `main`.
